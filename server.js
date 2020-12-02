@@ -17,7 +17,7 @@ http.createServer((request, response) => {
                 console.log(err);
             });
             response.statusCode = 200;
-            response.setHeader('Content-Type', 'text/plain');
+            response.setHeader( 'Content-Type' , 'text/plain' );
             response.write(' hello\n');
             response.end(' world ! ');
         });
